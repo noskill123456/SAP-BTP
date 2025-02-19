@@ -20,10 +20,12 @@ CLASS zcl_01_hello_world_12_ver2 IMPLEMENTATION.
   DATA name TYPE c LENGTH 10. " The double quote sign (") identifies the rest of the line, that is, the code to the right as a comment ...
 DATA my_var2 TYPE string.
 DATA my_var3 TYPE string VALUE 'Hello'.
+DATA my_VAR4 TYPE string VALUE 'Test'.
 
   out->write( |Hello World| ).
   OUT->WRITE( |hELLO WORLD2| ).
   out->write( my_var3 ).
+  out->write( my_var4 ).
 
 
   CONSTANTS: c_number0 TYPE i VALUE 0.
@@ -40,6 +42,7 @@ DATA my_var3 TYPE string VALUE 'Hello'.
 
 
 CLEAR my_var2.
+CLEAR my_VAR4.
 
   ENDMETHOD.
 ENDCLASS.
